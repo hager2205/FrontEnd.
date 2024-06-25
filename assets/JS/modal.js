@@ -201,7 +201,7 @@ form.addEventListener("submit", async (event) => {
 
 
   try {
-
+// récupèrer le token
     const token = localStorage.getItem('token')
     const response = await fetch("http://localhost:5678/api/works", {
       method: "POST",
